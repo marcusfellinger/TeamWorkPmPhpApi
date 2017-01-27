@@ -72,7 +72,7 @@ class CalendarEvent extends Model
 	{
 		$this->fields = [
 			'where' => false,
-			'project-users-can-edit' => false,
+			'project-users-can-edit' => true,
 			'description' => false,
 			'attending-user-ids' => false,
 			'notify-user-names' => false,
@@ -104,7 +104,6 @@ class CalendarEvent extends Model
 			'title' => false
 		];
 		$this->parent = 'event';
-		$this->action = 'calendarevents';
 	}
 
 }
