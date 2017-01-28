@@ -104,6 +104,7 @@ class CalendarEvent extends Model
 			'title' => false
 		];
 		$this->parent = 'event';
+		$this->action = 'calendarevents';
 	}
 
 }
